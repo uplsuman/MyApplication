@@ -20,6 +20,9 @@ import com.example.myapplication.viewState.MainState
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.flow.*
+import com.microsoft.appcenter.AppCenter;
+import com.microsoft.appcenter.analytics.Analytics;
+import com.microsoft.appcenter.crashes.Crashes;
 
 class MainActivity : AppCompatActivity() {
 
@@ -33,6 +36,11 @@ class MainActivity : AppCompatActivity() {
         setupViewModel()
         observeViewModel()
         setupClicks()
+
+        AppCenter.start(
+            application, "da0a4c63-6c47-4b97-b3cb-0c4dba7b14fd",
+            Analytics::class.java, Crashes::class.java
+        )
     }
 
     private fun setupClicks() {
