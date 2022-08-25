@@ -1,0 +1,10 @@
+{
+  "latestVersion": "2.5.5",
+  "latestVersionCode": "32",
+  "url": "https://github.com/javiersantos/AppUpdater/releases",
+  "releaseNotes": [
+    "- Example First evolution",
+    "- Example Second evolution",
+    "- Example Bug fixes"
+  ]
+}
